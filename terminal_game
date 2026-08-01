@@ -1,0 +1,152 @@
+print('---The Haunted Mansion---\n')
+
+print("Welcome to The Haunted Mansion!\n")
+
+print('You stand outside an old abandoned mansion.')
+print('People say it is haunted, but it also hides a priceless treasure.\n')
+
+print("Do you want to enter?")
+print('1. Enter the mansion')
+print('2. Run away')
+
+ans = int(input('Enter your answer(1 or 2)\n'))
+
+if ans == 2:
+    print('You run away safely.')
+    print('GAME OVER\n')
+
+print('You enter the mansion and find yourself in a dark hallway.\n')
+
+print('---Room 1---\n')
+print('The door closes behind you.\n')
+print('There are two paths.')
+print('1. Go upstairs')
+print('2. Go to the basement')
+
+ans = int(input('Enter your answer(1 or 2)\n'))
+
+if ans == 1:
+    print('---Upstairs---\n')
+    print('You hear strange whispers\n')
+    print('There are two doors.')
+    print('1. Open the red door')
+    print('2. Open the blue door')
+
+    ans = int(input(('Enter your answer(1 or 2)\n')))
+    if ans == 1:
+        print('---Red Door---\n')
+        print('A friendly ghost appears\n')
+        print('The ghost offers you a magic key.')
+        print('1. Accept')
+        print('2. Refuse')
+        ans = int(input('Enter your answer(1 or 2):\n'))
+
+        if ans == 1:
+            print('Got the magic key!')
+        else:
+            print('Continue without the key.')
+        print('\n---Basement---\n')
+        print('It is dark.\n')
+        print('You find a flashlight.')
+        print('1. Pick it up.')
+        print('2. Ignore it.')
+        
+        ans = int(input('Enter your answer(1 or 2):\n'))
+        if ans == 1:
+            print('You pick up the flashlight.')
+        else:
+            print('You ignore the flashlight.')
+        
+        print('\n---Treasure Room---\n')
+        print('You finally find a treasure chest.\n')
+        print('But a giant ghost blocks your way.')
+        print('1. Use the magic key')
+        print('2. Fight the ghost')
+        
+        ans = int(input('Enter your answer(1 or 2):\n'))
+        
+        if ans == 1:
+            print('The key seals the ghost.')
+            print('You open the treasure chest')
+            print('YOU WIN!')
+        else:
+            print('You fight the ghost')
+            print('1. Attack')
+            print('2. Dodge')
+            ans = int(input('Enter your answer(1 or 2):\n'))
+        
+            import random
+            outcome = random.choice(['win', 'lose'])
+        
+            while outcome != 'win':
+                print('\nThe ghost attack you')
+                print('1. Attack')
+                print('2. Dodge')
+        
+                ans = int(input('Enter your answer(1 or 2):\n'))
+                outcome = random.choice(['win','lose'])
+        
+            if outcome == 'win':
+                print('You defeat the ghost!')
+                print('You open the treasure chest')
+                print('YOU WIN!')  
+    else:
+        print('\n---Blue Door---\n')
+        print('A ghost attacks!')
+        print('1. Fight')
+        print('2. Run')
+        
+        ans = int(input('Enter your answer(1 or 2):\n'))
+        if ans == 1:
+            print('You fight with the ghost')
+            print('The Ghost catches you')
+            print('GAME OVER')
+        else:
+            print('GAME OVER!')
+else:
+    print('\n---Basement---\n')
+    print('It is dark.\n')
+    print('You find a flashlight.')
+    print('1. Pick it up.')
+    print('2. Ignore it.')
+
+    ans = int(input('Enter your answer(1 or 2):\n'))
+    if ans == 1:
+        print('You pick up the flashlight.')
+    else:
+        print('You ignore the flashlight.')
+
+print('\n---Treasure Room---\n')
+print('You finally find a treasure chest.\n')
+print('But a giant ghost blocks your way.')
+print('1. Use the magic key')
+print('2. Fight the ghost')
+
+ans = int(input('Enter your answer(1 or 2):\n'))
+
+if ans == 1:
+    print('The key seals the ghost.')
+    print('You open the treasure chest')
+    print('YOU WIN!')
+else:
+    print('\nYou fight the ghost')
+    print('1. Attack')
+    print('2. Dodge')
+    ans = int(input('Enter your answer(1 or 2):\n'))
+
+    import random
+    outcome = random.choice(['win', 'lose'])
+
+    while outcome != 'win':
+        print('\nThe ghost attack you')
+        print('1. Attack')
+        print('2. Dodge')
+
+        ans = int(input('Enter your answer(1 or 2):\n'))
+        outcome = random.choice(['win', 'lose'])
+
+    if outcome == 'win':
+        print('\nYou defeat the ghost!')
+        print('You open the treasure chest')
+        print('YOU WIN!')  
+  
